@@ -5,13 +5,13 @@ let aliquota = "";
 if (salarioBruto <= 5000.00){
     imposto = 0;
     aliquota = "isento";
-} else if (salarioBruto >= 5000.01){
+} else if (salarioBruto <= 5000.00){
     imposto = salarioBruto * 0.075; //7.5%
     aliquota = "Aliquota de 7,5%";
-} else if (salarioBruto >= 6500.01){
+} else if (salarioBruto <= 6500.00){
     imposto = salarioBruto * 0.15; //15%
     aliquota = "Aliquota de 15%";
-} else if (salarioBruto >= 8000.01){
+} else if (salarioBruto <= 8000.00){
     imposto = salarioBruto * 0,225; //22,5%
     aliquota = "Aliquota de 22,5%";
 } else {
